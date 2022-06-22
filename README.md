@@ -17,6 +17,13 @@ In this project , we will perform visual data analysis using Gapminder dataset.
 * Matplotlib
 * seaborn
 ## Animated Scatter Plot that shows Life Expectancy rate between 1960 and 2015.
+```python
+import plotly.express as px
+
+px.scatter(animated, x="Life_expectancy", y="fertility_rate",animation_frame='year',animation_group="country",
+           size='population',color='continent' ,hover_name="country", 
+           size_max=45, range_x=[0,90], range_y=[0,10], title='Life expectancy - fertility rate from 1960 till 2015')
+```
 
 ![App Screenshot](https://github.com/NadimSalameh/Visual-Data-Analysis/blob/main/Animated_ScatterPlot.png)
 
